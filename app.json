@@ -1,18 +1,18 @@
 {
-  "name": "Pro-LegendBot",
-  "description": "Tнє Smoothest And Fastest Bot Made By Pro Legend (@Pro_UserBoy). Made with Love And By Python Language With Hardwork... ❤ ",
+  "name": "Testing098Bot",
+  "description": "Tнє Smoothest And Fastest Bot Made By Pro Legend (@MR-INVISIBLEBOY). Made with Love And By Python Language With Hardwork... ❤ ",
   "logo": "https://te.legra.ph/file/d17467283e73c884834a5.jpg",
   "keywords": [
     "telegram",
     "userbot",
     "plugin",
-    "pro",
+    "Testing",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/PROBOY-OP/PRO-LEGENDBOT/",
-  "website": "https://github.com/PROBOY-OP/PRO-LEGENDBOT/",
-  "success_url": "https://t.me/Pro_LegendBots",
+  "repository": "https://github.com/MR-INVISIBLEBOY/TESTING-USERBOT-SETUP/",
+  "website": "https://github.com/MR-INVISIBLEBOY/TESTING-USERBOT-SETUP/",
+  "success_url": "https://t.me/Invisible_LegendBot",
   "env": {
     "ENV": {
       "description": "Set this to ANYTHING will enable heroku.(Don't Need To Change It)",
@@ -20,7 +20,7 @@
     },
     "ALIVE_NAME": {
       "description": "Fill your Full name. By default it is Pro-Person",
-      "value": "『⚡- Lêɠêɳ̃dẞογ -⚡ 』",
+      "value": "『⚡- your name ẞογ -⚡ 』",
       "required": false
     },
     "ALIVE_MSG": {
@@ -50,12 +50,12 @@
     },
     "YOUR_GROUP": {
       "description": "Set Your Group Username. By Default It Is (@LegendBot_Pros)",
-      "value": "@LegendBot_Pros",
+      "value": "@owner grp ",
       "required": false
     },
     "YOUR_CHANNEL": {
       "description": "Set Your Channel Username",
-      "value": "@Pro_LegendBots",
+      "value": "@ owner channel link",
       "required": false
     },
     "BOY_OR_GIRL": {
@@ -140,7 +140,7 @@
       "description": "Paste Group Id Which U Get From @missrose_bot",
       "value": ""
     }, 
-    "PRO_STRING": {
+    "TESTING_STRING": {
       "description": "Get this value by running https://replit.com/@PROBOY-OP/PRO-LEGENDBOT#main.py ",
       "value": ""
     },
