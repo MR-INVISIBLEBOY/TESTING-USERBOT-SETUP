@@ -1,6 +1,1 @@
-TESTING USERBOT FILE UPLOAD AND SETUP FILES ON HERUKOS 
-
-
-OK 
-
-DEPLOY HERUKO LINK (WAIT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MR-INVISIBLEBOY/TESTING-USERBOT-SETUP)
