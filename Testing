@@ -1,0 +1,46 @@
+
+
+_get_repolink () {
+    local regex
+    regex='(https?)://github.com/.+/.+'
+    if [[ $TESTING_REPO == "TESTINGBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1BST0JPWS1PUC9QUk8tVVNFUkJPVC9hcmNoaXZlL1Byby56aXATesting098=" | base64 -d
+    elif [[ $TESTING_REPO == "TESTINGBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1BST0JPWS1PUC9QUk8tVVNFUkJPVC9hcmNoaXZlL1Byby56aXATesting098=" | base64 -d
+    elif [[ $TESTING_REPO =~ $regex ]]
+    then
+        if [[ $TESTING_REPO_BRANCH ]]
+        then
+            echo "${TESTING_REPO}/archive/${TESTING_REPO_BRANCH}.zip"
+        else
+            echo "${TESTING_REPO}/archive/Testing.zip"
+        fi
+    else
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1BST0JPWS1PUC9QUk8tVVNFUkJPVC9hcmNoaXZlL1Byby56aXATesting098=" | base64 -d
+    fi
+}
+
+
+_Testing_bot () {
+    local zippath
+    zippath="Testing.zip"
+    echo "  🔰 Downloading TestingBot Source Code... 🔰"
+    wget -q $(_get_repolink) -O "$zippath"
+    echo "  📍Unpacking Data...📍"
+    TESTINGPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
+    unzip -qq "$zippath"
+    echo " 🏅 Download Complete Now Installing 🏅"
+    echo "  ✨ INSTALLING TESTINGBOT ✨"
+    rm -rf "$zippath"
+    sleep 5
+    cd $TESTINGPATH
+    echo "    ⚜️Starting TESTINGẞøt⚜️     "
+    echo " ♥️ NOW WAIT 3 MIN INSTALLING ALL PLUGIN ♥️"
+
+    python3 ../setup/updater.py ../requirements.txt requirements.txt
+    python3 -m userbot
+}
+
+_Testing_bot
